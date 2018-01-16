@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="dv" dir="rtl">
+  <head data-locale="dv" data-preferred-editor="id" data-location="{&quot;minlon&quot;:-73.04203,&quot;minlat&quot;:59.777401,&quot;maxlon&quot;:-11.312319,&quot;maxlat&quot;:83.627357}">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
+  <!--[if lt IE 9]><script src="assets/html5shiv-d1295273bbbdfc82f369112016c2ee5e65571d280a767a019ad5e9ac4507a044.js"></script><![endif]-->
+  <script src="assets/application-caff737293f23b423aaf1c60af85985e3697fbb39ce6d3892933550e60a1ae9d.js"></script>
+  <link rel="stylesheet" media="screen" href="assets/screen-rtl-922909757d393d22a09e3902453e8033f5ef8858ccc48be9719889e1b7245a53.css" />
+  <link rel="stylesheet" media="print" href="assets/print-rtl-f0e982d0ba074e914962563e26dfc48b3d2d9a05e5442932889cec8769cd2eaf.css" />
+  <link rel="stylesheet" media="screen, print" href="assets/leaflet-all-fa15e84ea50d8f3030d12897cde81f84c446d50bae7f9cc2cf82ccbc9249207a.css" />
+  <!--[if IE]>
+    <link rel="stylesheet" media="screen" href="assets/large-rtl-ca5e9c3656859b8cfc85b849c8123d18.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon-bf2dfee28b5006e3ea82ef78ae7f42adc1e2024165fbd39cadc9517a7d2bd8bf.ico" />
+  <![endif]-->
+  <link rel="apple-touch-icon" type="image/png" href="assets/apple-touch-icon-57x57-3fb65f787d95381a1fc1310a03599228f9a2b34615c0bb002510cfcfa3ab7d7b.png" sizes="57x57" />
+  <link rel="apple-touch-icon" type="image/png" href="assets/apple-touch-icon-60x60-24d8c222e95e5769237fecb64e3d9396f8087391f4254e807fe5981f445ef9ec.png" sizes="60x60" />
+  <link rel="apple-touch-icon" type="image/png" href="assets/apple-touch-icon-72x72-cbcf21a01fc6e7d59ab1d61523f5ec569dc34e6e31e279e17df0ef81000ff20e.png" sizes="72x72" />
+  <link rel="apple-touch-icon" type="image/png" href="assets/apple-touch-icon-76x76-763efbc4c5186950149f5bfd214ca47153ef55b86f43c6c28dbd1b9645308c6e.png" sizes="76x76" />
+  <link rel="apple-touch-icon" type="image/png" href="assets/apple-touch-icon-114x114-d63eb634fffcf58470b207260ca4680e74f5601786c3f3acf5242a7d3b0c2428.png" sizes="114x114" />
+  <link rel="apple-touch-icon" type="image/png" href="assets/apple-touch-icon-120x120-6b9842ca3d9d3f6c216b27a37e9d1437d405cc63048907db39fce7f790c169e4.png" sizes="120x120" />
+  <link rel="apple-touch-icon" type="image/png" href="assets/apple-touch-icon-144x144-4af65b3317dc639c0470834ece0feeae85426717cfaf258f070e9d4631652213.png" sizes="144x144" />
+  <link rel="apple-touch-icon" type="image/png" href="assets/apple-touch-icon-152x152-2c9080d0432e558575e840c72c8181676f7e3072c584225341d4b8913fc91a29.png" sizes="152x152" />
+  <link rel="apple-touch-icon" type="image/png" href="assets/apple-touch-icon-180x180-d259f523a4a6fedd1eceb58a9ae89ca567c4898fb084954e2028a7a72f5e76b5.png" sizes="180x180" />
+  <link rel="icon" type="image/png" href="assets/favicon-32x32-36d06d8a01933075bc7093c9631cffd02d49b03b659f767340f256bb6839d990.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="assets/favicon-194x194-d344a6bd2033108770b5ab4f8ac939d296872baee00278e5b2bc87e150c9be61.png" sizes="194x194" />
+  <link rel="icon" type="image/png" href="assets/favicon-96x96-538aa7e9e2315beabc6b074c4d7688602fe2b39ecd6e80f5e55f92c2be21744a.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="assets/android-chrome-192x192-1d10acc5e9ee8558d223e434537a58ec30414cc2bd86562b8c30f77d72df845e.png" sizes="192x192" />
+  <link rel="icon" type="image/png" href="assets/favicon-16x16-b5e4abe84fb615809252921d52099ede3236d1b7112ea86065a8e37e421c610b.png" sizes="16x16" />
+  <link rel="mask-icon" href="https://openstreetmap.org/tag-icon.svg" color="#7ebc6f" />
+  <link rel="manifest" href="assets/manifest-66ee8c38f7aa3fcb7c528e518ccc67d1d61c0dabd004359b2fc01f463d4340f9.json" />
+  <meta name="msapplication-config" content="assets/browserconfig-452fba6260105b79bf7c858b07d05d84afcbfd713b17bb800e3f8328dfdab78e.xml" />
+  <meta name="msapplication-TileColor" content="#00a300" />
+  <meta name="msapplication-TileImage" content="assets/mstile-144x144-7ca1379c629c16f810daaf2a6cc1945eb92f771fcd6ba14dac02a2fd6bf1f45c.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <link href="https://www.openstreetmap.org/" rel="canonical" />
+  <link rel="publisher" href="https://plus.google.com/111953119785824514010" />
+  <link rel="search" type="application/opensearchdescription+xml" title="OpenStreetMap Search" href="assets/osm-0aa4c48d8b5195b33e6e63fe57ac81e9c3d19fcf98e0f09a3f67a83456b9a6b4.xml" />
+  <meta name="description" content="OpenStreetMap is the free wiki world map." />
+  <meta property="og:site_name" content="OpenStreetMap" /><meta property="og:title" content="OpenStreetMap" /><meta property="og:type" content="website" /><meta property="og:image" content="http://www.openstreetmap.orgassets/osm_logo_256-835a859acf0d378e1d14e88b15e7b4b95211ccd41a2c061b1629cfbbb8deb697.png" /><meta property="og:image:secure_url" content="http://www.openstreetmap.orgassets/osm_logo_256-835a859acf0d378e1d14e88b15e7b4b95211ccd41a2c061b1629cfbbb8deb697.png" /><meta property="og:url" content="http://www.openstreetmap.org/" /><meta property="og:description" content="OpenStreetMap is a map of the world, created by people like you and free to use under an open license." />
+  <style type="text/css">.hidden { display: none !important }.hide_unless_logged_in { display: none !important }.hide_unless_administrator { display: none !important }.hide_unless_moderator { display: none !important }</style>
+    <script src="assets/index-453bda231ae655e35626a79ef435dbd5006466b1ba3f1bae63749757ea0ce4b2.js"></script>
+
+  
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="z6c7SOfXmh+zFoaAt3u/3gIspQcRsoIro6MV8In07Yh9EmexluSUKnB/lLYunpmZMhuWyFQZy9NJ07RS9XlXPQ==" />
+  <title>OpenStreetMap</title>
+</head>
+  <body class="map-layout">
+    <header class="closed">
+  <h1>
+    <a href="https://openstreetmap.org/" class="geolink">
+      <picture>
+        <source srcset="assets/osm_logo-f13314123f336d32682fddc79f2a5f0dedc894c637decede98a41587340dad19.svg" type="image/svg+xml"></source>
+        <img srcset="assets/osm_logo-f13314123f336d32682fddc79f2a5f0dedc894c637decede98a41587340dad19.svg" alt="OpenStreetMap logo" class="logo" src="assets/osm_logo-0e19527a1cc9fdf566c217d6e1863d88cac7bb743914792dea5d8db813501ad6.png" />
+      </picture>
+      OpenStreetMap
+    </a>
+  </h1>
+  <a href="#" id="menu-icon"></a>
+  <nav class='primary'>
+      <div class="search_forms">
+  <form method="GET" action="/search" class="search_form">
+    <a class="button switch_link" title="Find directions between two points" href="https://openstreetmap.org/directions"><img class="button" src="assets/directions-cdf916d315f444a4f1d51a46d2293f28dc13cbda1fac640da8968735e69b28ff.png" alt="Directions" /></a>
+    <input type="submit" name="commit" value="ހޯދާ" class="float" />
+    <div class='query_wrapper'>
+      <input type="text" name="query" id="query" placeholder="ހޯދާ" class="overflow" />
+      <a class="describe_location" title="Describe the current location using the search engine" href="#">ކޮޮބާ އަހަރެން؟</a>
+    </div>
+  </form>
+
+  <form method="GET" action="/directions" class="directions_form">
+    <div class="header"><span class="icon close"></span></div>
+
+    <div class="line">
+      <img class="routing_marker" data-type="from" draggable="true" src="assets/marker-green-a9c0b29cb063cce2ad2e158dc81d3ba69e192f83e6d99d8fbdce51f510333c69.png" alt="Marker green" />
+      <span class="force_width"><input type="text" name="route_from" id="route_from" placeholder="From" /></span>
+    </div>
+    <div class="line">
+      <img class="routing_marker" data-type="to" draggable="true" src="assets/marker-red-642ccf845d55fc3aff154f0d0d7664fe3a9842b5f32a9858df1e1c827641499f.png" alt="Marker red" />
+      <span class="force_width"><input type="text" name="route_to" id="route_to" placeholder="To" /></span>
+    </div>
+    <div class="line">
+      <select class="routing_engines" name="routing_engines"></select>
+      <input type="submit" name="commit" value="ހޯދާ" class="routing_go" />
+    </div>
+
+    <div class="loader_copy"><div class="loader"><img src="assets/searching-b66184be88a18bc2147e414ab67bde941db2507a69d455439a09d5280a8bdb63.gif" alt="Searching" /></div></div>
+  </form>
+</div>
+
+
+    <ul>
+      <li id="edit_tab" class="dropdown ">
+        <a class="tab geolink editlink" id="editanchor" data-editor="id" href="https://openstreetmap.org/edit">
+އެޑިޓްކުރައްވާ
+</a><a class='dropdown-toggle' data-toggle='dropdown' href='#'><b class="caret"></b></a>
+        <ul class='dropdown-menu'>
+            <li>
+              <a data-editor="id" class="geolink editlink" href="https://openstreetmap.org/edit?editor=id">Edit with iD (in-browser editor)</a>
+            </li>
+            <li>
+              <a data-editor="potlatch2" class="geolink editlink" href="https://openstreetmap.org/edit?editor=potlatch2">Edit with Potlatch 2 (in-browser editor)</a>
+            </li>
+            <li>
+              <a data-editor="remote" class="geolink editlink" href="https://openstreetmap.org/edit?editor=remote">Edit with Remote Control (JOSM or Merkaartor)</a>
+            </li>
+        </ul>
+      </li>
+      <li id="history_tab" class="">
+        <a class="tab geolink" href="https://openstreetmap.org/history">
+އެންމެ ފަހުން ގެނައި ބަދަލުތައް
+</a>
+      </li>
+      <li id="export_tab" class="">
+        <a class="tab geolink" href="https://openstreetmap.org/export">
+އެކްސްޕޯޓް
+</a>
+      </li>
+    </ul>
+  </nav>
+  <nav class='secondary'>
+    <ul>
+      <li class="compact-hide "><a href="https://openstreetmap.org/traces">
+ޖީޕީއެސް މެދުވެރިކޮށް ހޯދާ
+</a></li>
+      <li class="compact-hide "><a href="https://openstreetmap.org/diary">
+ބޭނުންކުރާ ފަރާތްތަކުގެ ޑައިރީ
+</a></li>
+      <li class="compact-hide "><a href="https://openstreetmap.org/copyright">
+ކޮޕީރައިޓް ލިންކް
+</a></li>
+      <li class="compact-hide "><a href="https://openstreetmap.org/help">
+އެހީ ހޯއްދަވާ
+</a></li>
+      <li class="compact-hide "><a href="https://openstreetmap.org/about">
+ފުރަތަމަ ސަފްޙާ
+</a></li>
+      <li id="compact-secondary-nav" class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">More <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li class=""><a href="https://openstreetmap.org/traces">GPS Traces</a></li>
+          <li class=""><a href="https://openstreetmap.org/diary">User Diaries</a></li>
+          <li class=""><a href="https://openstreetmap.org/copyright">Copyright</a></li>
+          <li class=""><a href="https://openstreetmap.org/help">Help</a></li>
+          <li class=""><a href="https://openstreetmap.org/about">About</a></li>
+        </ul>
+      </li>
+    </ul>
+      <ul class="user-menu clearfix">
+        <li><a href="https://openstreetmap.org/login?referer=%2F">
+ލޮގް އިން
+</a></li>
+        <li><a href="https://openstreetmap.org/user/new">
+ސައިން އަޕް
+</a></li>
+      </ul>
+  </nav>
+</header>
+
+    <div id="content" class="overlay-sidebar">
+      <div id="sidebar">
+    <div class="search_forms">
+  <form method="GET" action="/search" class="search_form">
+    <a class="button switch_link" title="Find directions between two points" href="https://openstreetmap.org/directions"><img class="button" src="assets/directions-cdf916d315f444a4f1d51a46d2293f28dc13cbda1fac640da8968735e69b28ff.png" alt="Directions" /></a>
+    <input type="submit" name="commit" value="ހޯދާ" class="float" />
+    <div class='query_wrapper'>
+      <input type="text" name="query" id="query" placeholder="ހޯދާ" autofocus="autofocus" class="overflow" />
+      <a class="describe_location" title="Describe the current location using the search engine" href="#">ކޮޮބާ އަހަރެން؟</a>
+    </div>
+  </form>
+
+  <form method="GET" action="/directions" class="directions_form">
+    <div class="header"><span class="icon close"></span></div>
+
+    <div class="line">
+      <img class="routing_marker" data-type="from" draggable="true" src="assets/marker-green-a9c0b29cb063cce2ad2e158dc81d3ba69e192f83e6d99d8fbdce51f510333c69.png" alt="Marker green" />
+      <span class="force_width"><input type="text" name="route_from" id="route_from" placeholder="From" /></span>
+    </div>
+    <div class="line">
+      <img class="routing_marker" data-type="to" draggable="true" src="assets/marker-red-642ccf845d55fc3aff154f0d0d7664fe3a9842b5f32a9858df1e1c827641499f.png" alt="Marker red" />
+      <span class="force_width"><input type="text" name="route_to" id="route_to" placeholder="To" /></span>
+    </div>
+    <div class="line">
+      <select class="routing_engines" name="routing_engines"></select>
+      <input type="submit" name="commit" value="ހޯދާ" class="routing_go" />
+    </div>
+
+    <div class="loader_copy"><div class="loader"><img src="assets/searching-b66184be88a18bc2147e414ab67bde941db2507a69d455439a09d5280a8bdb63.gif" alt="Searching" /></div></div>
+  </form>
+</div>
+
+
+    <div id="flash">
+      
+
+
+    </div>
+
+    <div id="browse_status"></div>
+
+    <div id="sidebar_loader">
+      <img alt="Loading..." class="loader" src="assets/searching-b66184be88a18bc2147e414ab67bde941db2507a69d455439a09d5280a8bdb63.gif">
+    </div>
+
+    <div id="sidebar_content">
+      
+    </div>
+
+      <div class="welcome">
+        <h2>އޯޕަން ސްޓްރީޓް މެޕަށް މަރުޙަބާ!</h2>
+        <div class="close-wrap"><span class="icon close"></span></div>
+        <p>އޯޕަން ސްޓްރީޓް މެޕަކީ މުޅި ދުނިޔޭގެ މައުލޫމާތު ހިމެނޭ ޗާޓެއް. މިޗާޓު ތައްޔާރުކުރަނީ ތިބޭފުޅުން، އަދި މިއީ ލައިސަންސެއްގެ ދަށުން ހިލޭ ބޭނުންކުރެވޭ ޗާޓެއް</p>
+        <p>
+Hosting is supported by <a href="http://www.ucl.ac.uk">UCL</a>, <a href="http://www.bytemark.co.uk">Bytemark Hosting</a> and <a href="http://www.imperial.ac.uk/">Imperial College London</a>, and other <a href="https://hardware.openstreetmap.org/thanks/">partners</a>.
+        </p>
+        <a class="button learn-more" href="about.html">އިތުރަށް ހޯއްދަވާ</a>
+        <a class="button sign-up" href="https://openstreetmap.org/user/new">ޗާޓް ހަދަން ފަށާ</a>
+      </div>
+
+    <div id="banner">
+      
+    </div>
+  </div>
+
+  <noscript>
+    <div id="noscript">
+      <p>You are either using a browser that does not support JavaScript, or you have disabled JavaScript.</p>
+      <p>OpenStreetMap uses JavaScript for its slippy map.</p>
+    </div>
+  </noscript>
+
+  <div id="map-ui">
+  </div>
+
+  <div id="map" tabindex="2">
+  </div>
+
+  <div id="attribution">
+    <table>
+      <tr>
+        <td class="attribution_license">http://openstreetmap.org/copyright</td>
+        <td class="attribution_project">http://openstreetmap.org</td>
+      </tr>
+      <tr>
+        <td colspan="2" class="attribution_notice">Copyright OpenStreetMap and contributors, under an open license</td>
+      </tr>
+    </table>
+  </div>
+
+</div>
+
+    <noscript><p><img src="http://piwik.openstreetmap.org/piwik.php?idsite=1" class="piwik" alt="" /></p></noscript>
+  </body>
+</html>
+

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head data-locale="en" data-preferred-editor="id">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
+  <!--[if lt IE 9]><script src="assets/html5shiv-d1295273bbbdfc82f369112016c2ee5e65571d280a767a019ad5e9ac4507a044.js"></script><![endif]-->
+  <script src="assets/application-323aa1666ce02f25ed681050217fc502234143f840714075c3251b0f91858f07.js"></script>
+  <link rel="stylesheet" media="screen" href="assets/screen-ltr-a0c723b42d2cc50a4e7a8c34d58a1e747af8994a28efbf416542daa5f23e9783.css" />
+  <link rel="stylesheet" media="print" href="assets/print-ltr-f0e982d0ba074e914962563e26dfc48b3d2d9a05e5442932889cec8769cd2eaf.css" />
+  <link rel="stylesheet" media="screen, print" href="assets/leaflet-all-d811992364371af42d587b711ae020b0289867fde446048da4b0b7fea5fa93bf.css" />
+  <!--[if IE]>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon-bf2dfee28b5006e3ea82ef78ae7f42adc1e2024165fbd39cadc9517a7d2bd8bf.ico" />
+  <![endif]-->
+  <link rel="apple-touch-icon" type="image/png" href="assets/apple-touch-icon-57x57-cfd080abd483a2c8325da06a5a4687ffed69173bb7b7e62d4409ed61674677bd.png" sizes="57x57" />
+  <link rel="apple-touch-icon" type="image/png" href="assets/apple-touch-icon-60x60-d000d708a51e48a61fdeb79701ab6e003b9e6096d5a26e446bf85e2cdb9fb138.png" sizes="60x60" />
+  <link rel="apple-touch-icon" type="image/png" href="assets/apple-touch-icon-72x72-2146604316355b588fa0e9c53c5bda0b14eafddd0b939686356ac0096880e35d.png" sizes="72x72" />
+  <link rel="apple-touch-icon" type="image/png" href="assets/apple-touch-icon-76x76-61f3dde6d2f60f2c5fb784df4b5014c9fcad1aa0c01766f33e198e9e555d39da.png" sizes="76x76" />
+  <link rel="apple-touch-icon" type="image/png" href="assets/apple-touch-icon-114x114-53f58fc4c9ff46247f0f3ea9def90162f244631c936394860c3be0bd6645a35c.png" sizes="114x114" />
+  <link rel="apple-touch-icon" type="image/png" href="assets/apple-touch-icon-120x120-d4eab8b7f42848d8a68045ef10b959b2c279d9ba2b3198520d5fb880de3d938c.png" sizes="120x120" />
+  <link rel="apple-touch-icon" type="image/png" href="assets/apple-touch-icon-144x144-3ec9ac978fb7bb554bd79d1ca05c3689e3deb12e3d2b5b5e73962cd731b1499c.png" sizes="144x144" />
+  <link rel="apple-touch-icon" type="image/png" href="assets/apple-touch-icon-152x152-385ae90aa77bd2efc9dfa42a91cabe973122044f554e8e19c94039be6aff9b26.png" sizes="152x152" />
+  <link rel="apple-touch-icon" type="image/png" href="assets/apple-touch-icon-180x180-8575b865b66da9ea7452adf3c20f9eb715ee4290254a22987c483c3826b93205.png" sizes="180x180" />
+  <link rel="icon" type="image/png" href="assets/favicon-32x32-76de1055b40f75be27792fdfc07df23963926c47648cc66d0189c87827ebeea2.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="assets/favicon-194x194-e43358b5598e0a9b73eb2da5c3cc99a53336d6c3d3f761d52c75e3f25dd760dd.png" sizes="194x194" />
+  <link rel="icon" type="image/png" href="assets/favicon-96x96-3f49f5b5ebbc6b674b859858266939edc95b2d7f97979470702f2d3fa9082819.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="assets/android-chrome-192x192-edb313ad64ec75f942ce3416e9d18c2021f682275f4d992696caa2695e882fbd.png" sizes="192x192" />
+  <link rel="icon" type="image/png" href="assets/favicon-16x16-1772a97682f5b3f45c3f98c18f98634808b637a5595026962709fb54af9b9044.png" sizes="16x16" />
+  <link rel="mask-icon" href="assets/tab-icon-2750d30fb8511d6a07bf6dd87cb58a27e8a17d145eadfb886d9a0400796de96f.svg" color="#7ebc6f" />
+  <link rel="manifest" href="assets/manifest-63908e296e51e1608ae31ec3c7c39eb12b544bd1459921a2e42298604de3ff45.json" />
+  <meta name="msapplication-config" content="assets/browserconfig-807d291ce027322cda4de0189eb2bbc65919dc2de8df7d4d389b6da4aa9f899c.xml" />
+  <meta name="msapplication-TileColor" content="#00a300" />
+  <meta name="msapplication-TileImage" content="assets/mstile-144x144-ddbe37d9292379699901d3522682c6b24e0223849b5ef0730d1da3b924463376.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <link href="https://www.openstreetmap.org/about" rel="canonical" />
+  <link rel="publisher" href="https://plus.google.com/111953119785824514010" />
+  <link rel="search" type="application/opensearchdescription+xml" title="OpenStreetMap Search" href="assets/osm-0aa4c48d8b5195b33e6e63fe57ac81e9c3d19fcf98e0f09a3f67a83456b9a6b4.xml" />
+  <meta name="description" content="OpenStreetMap is the free wiki world map." />
+  <meta property="og:site_name" content="OpenStreetMap" /><meta property="og:title" content="OpenStreetMap" /><meta property="og:type" content="website" /><meta property="og:image" content="https://www.openstreetmap.orgassets/osm_logo_256-cde84d7490f0863c7a0b0d0a420834ebd467c1214318167d0f9a39f25a44d6bd.png" /><meta property="og:image:secure_url" content="https://www.openstreetmap.orgassets/osm_logo_256-cde84d7490f0863c7a0b0d0a420834ebd467c1214318167d0f9a39f25a44d6bd.png" /><meta property="og:url" content="https://www.openstreetmap.org/about" /><meta property="og:description" content="OpenStreetMap is a map of the world, created by people like you and free to use under an open license." />
+  <style type="text/css">.hidden { display: none !important }.hide_unless_logged_in { display: none !important }.hide_unless_administrator { display: none !important }.hide_unless_moderator { display: none !important }</style>
+
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="1ANikNWs6L8rn8EFeE42M3LXyDCQW4YaVuZe38dxGpRM96AHORB41srefqO3TJUGY164RKZlrUik7zGWkF8skw==" />
+  <title>OpenStreetMap</title>
+</head>
+  <body class="site site-about">
+    <header class="closed">
+  <h1>
+    <a href="" class="geolink">
+      <picture>
+        <source srcset="assets/osm_logo-f13314123f336d32682fddc79f2a5f0dedc894c637decede98a41587340dad19.svg" type="image/svg+xml"></source>
+        <img srcset="assets/osm_logo-f13314123f336d32682fddc79f2a5f0dedc894c637decede98a41587340dad19.svg" alt="OpenStreetMap logo" class="logo" src="assets/osm_logo-ce691ac3325e0ebe119ff9087858192cc7677e50d7b77655cafc1f208161ad79.png" />
+      </picture>
+      OpenStreetMap
+    </a>
+  </h1>
+  <a href="#" id="menu-icon"></a>
+  <nav class='primary'>
+
+    <ul>
+      <li id="edit_tab" class="dropdown ">
+        <a class="tab geolink editlink" id="editanchor" data-editor="id" href="edit">Isku dubarid</a><a class='dropdown-toggle' data-toggle='dropdown' href='#'><b class="caret"></b></a>
+        <ul class='dropdown-menu'>
+            <li>
+              <a data-editor="id" class="geolink editlink" href="edit?editor=id">Isku dubarid iD (in-browser editor)</a>
+            </li>
+            <li>
+              <a data-editor="potlatch2" class="geolink editlink" href="edit?editor=potlatch2">Isku dubarid Potlatch 2 (in-browser editor)</a>
+            </li>
+            <li>
+              <a data-editor="remote" class="geolink editlink" href="edit?editor=remote">Isku dubarid Remote Control (JOSM or Merkaartor)</a>
+            </li>
+        </ul>
+      </li>
+      <li id="history_tab" class="">
+        <a class="tab geolink" href="history">Taariikhda</a>
+      </li>
+      <li id="export_tab" class="">
+        <a class="tab geolink" href="export">Xawil</a>
+      </li>
+    </ul>
+  </nav>
+  <nav class='secondary'>
+    <ul>
+      <li class="compact-hide "><a href="traces">Raadadka GPS</a></li>
+      <li class="compact-hide "><a href="diary">Maqaal</a></li>
+      <li class="compact-hide "><a href="copyright">Xuquuqda Daabacaada</a></li>
+      <li class="compact-hide "><a href="help">Caawin</a></li>
+      <li class="compact-hide current"><a href="about">Xogtaada</a></li>
+      <li id="compact-secondary-nav" class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dheeraad <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li class=""><a href="traces">Raadadka GPS</a></li>
+          <li class=""><a href="diary">Maqaal</a></li>
+          <li class=""><a href="copyright">Xuquuqda Daabacaada</a></li>
+          <li class=""><a href="help">Caawin</a></li>
+          <li class="current"><a href="about">Xogtaada</a></li>
+        </ul>
+      </li>
+    </ul>
+      <ul class="user-menu clearfix">
+        <li><a href="login?referer=%2Fabout">Gal</a></li>
+        <li><a href="user/new">Isdiiwaangeli</a></li>
+      </ul>
+  </nav>
+</header>
+
+    <div id="content" class="">
+
+
+
+    <div class="content-body">
+      <div class="content-inner">
+        <div class='attr'>
+  <div class='byosm'>
+    <span>&copy;</span>Tabarucayaasha<br/>OpenStreetMap
+  </div>
+
+  <div class='user-image'></div>
+
+  <h1><span class='user-name'>OpenStreetMap</span> wuxuu awood siiyaa macluumaadka ku jira kumanaan shabakado, barnaamijyada telefoonada, iyo qalabka kombuyuutarka</h1>
+</div>
+
+<div class='text'>
+  <div class='section'>
+    <p><strong>OpenStreetMap waxaa dhisay bulsho khariiradlayaal ah kuwaas oo gacan ka geysta oona ilaaliya xogta ku saabsan wadooyinka, raadadka, makhaayadaha, boostaajooyinka tareenka, iyo in ka badan, adduunka oo idil.
+</strong></p>
+    <h2><div class='icon local'></div>Aqoonta Deegaanka</h2>
+    <p>OpenStreetMap waxay xoojisaa aqoonta deegaanka. Tabarucayaashu waxay isticmaalaan sawirro muuqaal ah, qalabka GPS (Nidaamka Meeleynta Caalamka), iyo khariiradaha goobta tiknoolajiyadooda sahlan si loo xaqiijiyo in OSM sax tahay oona la cusboonaysiiyay.</p>
+  </div>
+
+  <div class='section'>
+    <h2><div class='icon community'></div>Hoggaamiso Bulshada</h2>
+    <p>
+Bulshada OpenStreetMap waa kuwo kala duwan, dareen xoogan leh, horumarna samaynaya maalin kasta.
+Tabarucayaasheena waxaa ka mid ah khariiradlayaal xamaasadaysan, xirfadlayaasha GIS, injineerada ku shaqeeya barnaamijyada kombuyuutareed ee OSM,
+khariiradlayaasha bini'aadamnimada jooga goobaha ay saameyeen musiibooyinka iyo kuwo kale oo badan.
+Si aad wax badan uga barato bulshada, eeg
+ <a href='https://blog.openstreetmap.org'>Maqaalka OpenStreetMap</a>,
+<a href='/diary'>maqaalada</a>,
+<a href='http://blogs.openstreetmap.org/'>maqaalada bulshada</a>, iyo shabakada
+the <a href='http://www.osmfoundation.org/'>Ururka OSM</a>.
+</p>
+  </div>
+
+  <div class='section' id='open-data'>
+    <h2><div class='icon open'></div>Xog Furan</h2>
+    <p>OpenStreetMap waa <i>xog furan</i>:  waxaad xor u tahay inaad u isticmaasho ujeeddo kasta illaa iyo intaad xuquuqda OpenStreetMap iyo tabarucayaasheeda ka xusayso. Haddii aad beddesho ama aad ku biiriso xogta mid cusub, waxaad qaybin kartaa natiijada keliya adigoo isticmaalaya ruqsada mid la mid ah. Faahfaahinta ka eeg bogga
+      <a href='/copyright'>Xuquuqda Daabacaadda iyo Ruqsada</a>.
+</p>
+  </div>
+
+  <div class='section' id='legal'>
+    <h2><div class='icon legal'></div>Sharciga</h2>
+    <p>Shabakadan iyo adeegyo kale oo xiriir la leh waxaa waxaa si rasmi ah u howlgeliya hay'ada
+<a href='http://osmfoundation.org/'>OpenStreetMap Foundation</a> (OSMF)
+iyada oo matalaysa bulshada. Isticmaalka dhammaan adeegyadii OSMF waxay ku xiranyihiin <a href="http://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy">
+Siyaasadaha Isticmaalka La Aqbali Karo</a> iyo
+<a href="http://wiki.osmfoundation.org/wiki/Privacy_Policy">Qaanuunka Arrimaha Khaaska ah</a>
+<br>
+Fadlan <a href='http://osmfoundation.org/Contact'>la xiriir OSMF</a>
+haddii aad haysato ruqsad, xuquuqda daabacaada ama su’aalo iyo arimo kale ee sharciga.
+</p>
+  </div>
+
+  <div class='section' id='partners'>
+    <h2><div class='icon partners'></div>Shuraakada</h2>
+    <p>Martigelinta waxaa naga taageera <a href="http://www.ucl.ac.uk">UCL</a>, <a href="http://www.bytemark.co.uk">Bytemark Hosting</a>, <a href="http://www.imperial.ac.uk/">Imperial College London</a>,
+      iyo <a href="https://hardware.openstreetmap.org/thanks/">shuraako</a> kale.
+    </p>
+  </div>
+</div>
+
+      </div>
+    </div>
+</div>
+
+  </body>
+</html>
